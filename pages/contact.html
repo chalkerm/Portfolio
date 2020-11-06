@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Contact Me</title>
+</head>
+<body>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <nav>
+        <ul>
+          <li class="mc"><img src="../images/white_mc.png" alt="logo"></li>
+          <li><a href="../pages/index.html">About</a></li>
+          <li><a href="../pages/resume.html">Resume</a></li>
+          <li><a href="../pages/projects.html">Projects</a></li>
+          <li><a class="current" href="../pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+
+        <header id="main">
+          <h1>Maya Chalker</h1>
+        </header>
+
+        <form action="https://formspree.io/f/xyybjydd" method="POST"> 
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name_id">Your Name</label>
+            <input id="name_id" type="text" placeholder="Enter Your Name" name="name" required>
+
+            <label for="email_id">Your Email</label>
+            <input id="email_id" type="email" placeholder="Enter Your Email" name="email" required>
+
+
+            <label for="phone_id">Your Phone Number</label>
+            <input id="phone_id" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" required>
+            <div><span>Format: 123-456-7890</span></div>
+
+
+            <label for="msg_id">Leave A Message</label>
+
+            <textarea id="msg_id" name="msg" required></textarea><br>
+
+            <input type="checkbox" checked="checked" name="remember" id="check_id"> 
+            <label for="check_id">Remember me</label>
+
+            <input type="submit" value="Contact Me">
+          </fieldset>
+         </form>
+  
+      </main>
+      <footer>
+        <p>Maya Chalker <br/>
+        University of Michigan Class of 2022 <br/>
+        (973) 722-5559 | chalkerm@umich.edu </p>
+      </footer>
+</body>
+</html>
