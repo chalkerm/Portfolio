@@ -382,6 +382,17 @@ input[type=submit]:hover{
   opacity: 0.8;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px solid #f1f1f1;
+  background-color: #89cff0;
+  padding: 50px;
+  justify-content: space-between;
+  
+}
+
 @media screen and (min-width: 770px) {
   form{
       width: 80%;
