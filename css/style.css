@@ -245,9 +245,15 @@ header{
   grid-row: 1 / auto;   
 }
 
-.res_img {
-  width: 75%;
-  height: 75%;
+.res_img1 {
+  width: 150px;
+  height: 200px;
+  padding-left: 20px;
+}
+
+.res_img2 {
+  width: 200px;
+  height: 170px;
   padding-left: 20px;
 }
 
