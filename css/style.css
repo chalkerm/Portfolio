@@ -3,7 +3,7 @@ html{
     overflow-x: hidden;
 }
 
-header{
+#main{
   background-image: url(../images/maya.png);
   min-height: 40vh;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ body{
   background-color: #c9c9c9;
   font-size: 18px;
   font-family: sans-serif;
-  /*margin: 1.2em;*/
+  margin: 8px;
   padding: 0;
   color: black;
   padding-bottom: 100px;
@@ -448,7 +448,7 @@ input[type=submit]:hover{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 80%;
     background-color: white;
   }
 }
