@@ -496,11 +496,6 @@ input[type=submit]:hover{
   tr:hover{
     background-color: rgba(0, 0, 139, 0.25);
   }
-
-  .old{
-    width: 60px;
-    height: 315px;
-  }
 }
 
 @media screen and (prefers-reduced-motion: reduce){
