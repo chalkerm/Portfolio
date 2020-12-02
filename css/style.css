@@ -1,5 +1,16 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+  background-image: url(../images/maya.png);
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-color: white;
 }
 
 body{
@@ -72,6 +83,7 @@ nav li a:active {
 nav .current {
   color: white;
   background: #00008B;
+  text-decoration: underline;
 }
 
 .skip a{
@@ -134,8 +146,8 @@ footer{
 
 .pics{
   border: 5px solid white;
-  height: 200px;
-  width: 170px;
+  width: 90%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -240,21 +252,13 @@ tr:hover{
   grid-template-rows: auto;
 }
 
-header{
+#usglove, #telefund{
   grid-column: 1 / -1;  
   grid-row: 1 / auto;   
 }
 
-.res_img1 {
-  width: 150px;
-  height: 200px;
-  padding-left: 20px;
-}
-
-.res_img2 {
-  width: 200px;
-  height: 170px;
-  padding-left: 20px;
+.res_img1, .res_img2 {
+  width: 80%;
 }
 
 .usglove-img, .telefund-img {
@@ -313,10 +317,12 @@ h3{
 
 /* CONTACT */
 form {
-  border: 3px solid #f1f1f1;
-  background-color: #89cff0;
-  margin: 50px;
-  margin-bottom: 100px;
+  background-color: rgba(137, 207, 240, .8);
+  border: 5px solid white;
+  padding: 30px;
+  vertical-align: middle;
+  width: 80%;
+  margin-top: 50px;
 }
 
 legend {
@@ -334,7 +340,7 @@ input:focus {
 
 label {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   width: 15%;
 }
 
@@ -383,20 +389,43 @@ input[type=submit]:hover{
 }
 
 .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 3px solid #f1f1f1;
-  background-color: #89cff0;
-  padding: 50px;
-  justify-content: space-between;
+  display: grid;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  grid-row-gap: 5px;
   margin-top: 20px;
+  background-color: rgba(137, 207, 240, .8);
+  border: 5px solid white;
+  padding: 30px;
+  vertical-align: middle;
+  margin: 50px;
 }
+
+.jpn, .golf, .gym {
+  grid-row: 1 / auto;
+  width: 90%;
+  border: 3px solid #f1f1f1;
+}
+
+.view, .cabo, .walk {
+  grid-row: 2 / auto;
+  width: 90%;
+  border: 3px solid #f1f1f1;
+}
+
+/* .pic{
+  width: 5em;
+  border: 5px solid white;
+  max-height: 5em;
+} */
 
 @media screen and (min-width: 770px) {
   form{
       width: 80%;
-      margin: 0 auto;
+      margin: 50px auto;
   }
 
   input {
@@ -411,5 +440,15 @@ input[type=submit]:hover{
   div + label {
       line-height: 25vh;
       vertical-align: top;
+  }
+
+  header{
+    background-image: url(../images/maya.png);
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-color: white;
   }
 }
