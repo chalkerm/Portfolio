@@ -234,13 +234,11 @@ footer{
 }
 
 @-webkit-keyframes grow{
-  /*Your code here.*/
   from {transform: scale(1);}
   to {transform: scale(1.5)}
 }
 
 @keyframes grow{
-  /*Your code here.*/
   from {transform: scale(1);}
   to {transform: scale(1.5)}
 } 
@@ -455,8 +453,30 @@ input[type=submit]:hover{
   opacity: 0.8;
 }
 
+@-webkit-keyframes colors{
+  from {background-color: #89cff0;}
+  to {background-color: #00008B}
+}
+
+@keyframes colors{
+  from {background-color: #89cff0;}
+  to {background-color: #00008B}
+}
+
+/* @-webkit-keyframes colors1{
+  from {background-color:  #00008B;}
+  to {background-color:#89cff0}
+}
+
+@keyframes colors1{
+  from {background-color:#00008B;}
+  to {background-color:  #89cff0;}
+} */
+
 .gallery {
   display: grid;
+  animation: colors 5s infinite alternate;
+  /* animation: colors1 5s infinite; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
@@ -652,4 +672,8 @@ input[type=submit]:hover{
     -webkit-transition: none; 
     transition: none;        
    }
+
+  .gallery{
+    animation: none;
+  }
 }
