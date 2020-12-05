@@ -463,20 +463,9 @@ input[type=submit]:hover{
   to {background-color: #00008B}
 }
 
-/* @-webkit-keyframes colors1{
-  from {background-color:  #00008B;}
-  to {background-color:#89cff0}
-}
-
-@keyframes colors1{
-  from {background-color:#00008B;}
-  to {background-color:  #89cff0;}
-} */
-
 .gallery {
   display: grid;
   animation: colors 5s infinite alternate;
-  /* animation: colors1 5s infinite; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
@@ -676,4 +665,9 @@ input[type=submit]:hover{
   .gallery{
     animation: none;
   }
+
+  header{
+    background-attachment: initial;
+  }
+
 }
