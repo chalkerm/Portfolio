@@ -309,26 +309,28 @@ tr:hover{
 .container1, .container2{
   display: grid;
   grid-row-gap: 15px;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 1fr;
 }
 
 #usglove, #telefund{
-  grid-column: 1 / -1;  
+  grid-column: 1 / auto;  
   grid-row: 1 / auto;   
 }
 
 .res_img1, .res_img2 {
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .usglove-img, .telefund-img {
   grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
+  grid-row: 2 / span 1;
+  align-items: center;
 }
 .usglove-text, .telefund-text {
-  grid-column: 2 / auto;
-  grid-row: 1 / span 1;
+  grid-column: 1 / auto;
+  grid-row: 3 / span 1;
 }
 
 .text-block, .education, .extracurriculars, .skills, .additional{
@@ -631,7 +633,32 @@ input[type=submit]:hover{
 
   #blurb {
     margin-top: 350px;
-}
+  }
+
+  .container1, .container2{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: auto;
+  }
+
+  #usglove, #telefund{
+    grid-column: 1 / -1;  
+    grid-row: 1 / auto;   
+  }
+
+  .res_img1, .res_img2 {
+    width: 80%;
+  }
+
+  .usglove-img, .telefund-img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .usglove-text, .telefund-text {
+    grid-column: 2 / auto;
+    grid-row: 1 / span 1;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -670,4 +697,31 @@ input[type=submit]:hover{
     background-attachment: initial;
   }
 
+}
+
+@media print { 
+  #main {
+    background-image: none;
+    display: none;
+  }
+
+  .flip-card-back {
+    display: none;
+  }
+
+  .flip-card-front {
+    display: block;
+  }
+
+  #photo_gallery {
+    display: none;
+  }
+
+  .pic-container {
+    display: none;
+  }
+
+  #blurb {
+    margin-top: 350px;
+  }
 }
