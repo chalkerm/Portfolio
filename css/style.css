@@ -182,7 +182,7 @@ footer{
 }
 
 #link{
-  color: white;
+  color: black;
   text-decoration-style: solid; 
 }
 
@@ -229,7 +229,7 @@ footer{
 .flip-card-back {
   position: absolute;
   background-color: #89cff0;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
